@@ -10,9 +10,8 @@ document.getElementById('ageForm').addEventListener('submit', function(event) {
 
     const feedback = document.getElementById('feedback');
     if (age >= 18) {
-        feedback.textContent = "You are eligible for benefits.";
-        feedback.style.color = "green";
-    } else {
+        window.location.href = "success.html"; 
+    }else {
         feedback.textContent = "You must be at least 18 years old to qualify.";
         feedback.style.color = "red";
     }
