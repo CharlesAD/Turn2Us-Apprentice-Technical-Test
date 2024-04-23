@@ -1,16 +1,23 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
     font-family: "RobotoSlab","Helvetica","Arial",sans-serif;
     font-size: 1.5rem;
     color: #000;
     overflow-x: hidden
-    
-    
+     
 }
 
+html {
+    overflow: auto;
+}
 
 .header {
+    width: 100%;
     background-color: #fff; 
     
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
@@ -18,7 +25,7 @@ body {
 
 
 .header_container {
-    width: 80%; 
+    width: 100%; 
     margin: 0 auto; 
     display: flex; 
     justify-content: left;
@@ -41,9 +48,27 @@ body {
     
 }
 
+.content-section2 {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #fadade;
+    margin: 0;
+    padding-right: 20px;
+    
+}
+
 .title-container {
     flex-basis: 50%;
     padding-right: 20px; 
+    padding-left: 200px;
+}
+
+.title-container2 {
+    flex-basis: 50%;
+    padding-right: 50px; 
     padding-left: 200px;
 }
 
@@ -60,10 +85,11 @@ body {
 }
 
 .horizontal-stripe2 {
-    background-color: #f8f9fa; 
+    background-color: #ffffff; 
     width: 100%; 
     padding: 20px 0; 
     text-align: center; 
+    margin: 0;
 }
 
 button {
@@ -87,6 +113,9 @@ button {
    
   }
 
+  h1 {
+    font-weight: 400;
+  }
 
   form {
     display: flex;
@@ -132,6 +161,18 @@ input[type="date"], button {
         flex-direction: column;
     }
 
+    .content-section2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .title-container2 {
+        justify-content: center;
+        padding-left: 10px;
+    }
+
     .title-container, .image-container {
         flex-basis: 100%;
         padding: 10px 0;
@@ -140,6 +181,14 @@ input[type="date"], button {
 
     .title-container {
         padding: 10px;
+    }
+
+    .container2 {
+        width: 100%;
+       
+       justify-content: center;
+       margin-left: 10px;
+       
     }
 
     .image-container {
@@ -166,3 +215,44 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
+.site-footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #000000;
+    color: #fff;
+    padding: 0px 0;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.site-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+}
+
+#footer-logo {
+    width: 5rem;
+}
+
+#back-link{
+    border: solid black 3px;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+#subBtn{
+    border: solid black 3px;
+    border-radius: 0;
+    background-color: #fff;
+}
+
