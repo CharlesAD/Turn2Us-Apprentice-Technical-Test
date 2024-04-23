@@ -103,4 +103,61 @@ input[type="date"], button {
 }
 
 
-  
+
+
+.body, .header_container, .content-section, .title-container, .image-container {
+    width: 100%;
+    padding: 0 10px;
+}
+
+/**Mobile Responsive**/
+
+
+@media (max-width: 768px) {
+    .header_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__logo img {
+        width: 90px;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+
+    .title-container, .image-container {
+        flex-basis: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .title-container {
+        padding: 10px;
+    }
+
+    .image-container {
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .title-container {
+        padding-left: 10px;
+    }
+
+    button, input[type="date"] {
+        width: 70%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
