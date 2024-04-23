@@ -1,6 +1,6 @@
 body {
     font-family: "RobotoSlab","Helvetica","Arial",sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000;
     overflow-x: hidden
     
@@ -9,7 +9,7 @@ body {
 
 .header {
     background-color: #fff; 
-    padding: 10px 0; 
+    
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
@@ -32,8 +32,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px, 0px, 0px, 0px;
+    padding: 0;
     background-color: #fadade;
+    margin: 0;
+    
 }
 
 .title-container {
@@ -46,6 +48,7 @@ body {
     flex-basis: 50%;
     display: flex;
     justify-content: flex-end;
+    margin: 0;
 }
 
 .image-container img {
@@ -98,7 +101,6 @@ input[type="date"], button {
 }
 
 #feedback {
-    
     margin-top: 10px;
 }
 
